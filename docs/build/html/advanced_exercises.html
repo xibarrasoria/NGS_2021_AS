@@ -83,7 +83,9 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Installing conda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html#downloading-rna-seq-samples">Downloading RNA-seq samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html#installing-whippet">Installing Whippet</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="indexing_transcriptome.html">Differential inclusion analysis</a></li>
@@ -196,7 +198,7 @@ run_metadata : /lustre/scratch117/cellgen/team218/gp7/Micro-exons/Runs/Paper/Mic
 <li><p><code class="docutils literal notranslate"><span class="pre">Single_Cell</span></code> correspond to an optiona parameter that needs to be set as <code class="docutils literal notranslate"><span class="pre">T</span></code> in order to run <code class="docutils literal notranslate"><span class="pre">snakepool</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cluster_metadata</span></code> must indicate the path of a tabular separated file that contain at least two colums to indicate the cluster and file base names. This file must have the first row as header.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cluster_name</span></code> indicate the name of the column, inside <code class="docutils literal notranslate"><span class="pre">cluster_metadata</span></code>, which has cluster name information.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">file_baseame</span></code> indicate the name of the column, inside <code class="docutils literal notranslate"><span class="pre">cluster_metadata</span></code>, which has the sample names. These needs to match with sample names defined on the input files (See <a class="reference internal" href="setup.html"><span class="doc">Setup</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file_baseame</span></code> indicate the name of the column, inside <code class="docutils literal notranslate"><span class="pre">cluster_metadata</span></code>, which has the sample names. These needs to match with sample names defined on the input files (See <a class="reference internal" href="setup.html"><span class="doc">Installing conda</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cdf_t</span></code> parameter set a theshold to run a <a class="reference external" href="https://en.wikipedia.org/wiki/Cumulative_distribution_function">Cumulative distribution function</a> over the resultant Probability values obtained for each node across comutational replicates, asuming these fit a <a class="reference external" href="https://en.wikipedia.org/wiki/Beta_distribution">beta distribution</a>. Which in practical terms can be considered as a user-defined threshold (between 0.5 and 1) to calculate a p-value assosiated to node’s probability of differential inclusion across computational replicates.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">min_p_mean</span></code> corresponds to a threshold of mean probability values across computational samples to define a node as differentially included across the comparing cell-types.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">min_p_delta</span></code> corresponds to a threshold of mean delta PSI values across computational samples to define a node as differentially included across the comparing cell-types.</p></li>
