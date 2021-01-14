@@ -29,6 +29,10 @@ Moreover, if you list content inside the home directory, you will see a `minicon
     sudo chmod 755 -R /home/miniconda2
     sudo chmod 755 -R /home/manager
 
+.. note::
+
+    The command above will require your password, which is the same than your user name. To check your user name insert `whoami` in the terminal.
+
 Finally, to test everything in place execute the following command, which will instruct conda to update itself:
 
 .. code-block:: bash
@@ -36,17 +40,46 @@ Finally, to test everything in place execute the following command, which will i
    conda update -n base -c defaults conda
 
 
-Creating a conda virtual environment
-------------------------------------
+Installing software dependencies
+================================
 
-To install the software necessary for this project, we will first create a virtual environment. Within this virtual environment, we will install the software dependencies to work on this project, without interfering with the other software installed in the VM. To create a virtual environment called `project` you can execute the following command:
+To install the software necessary for this project, we will first create a virtual environment, and we will install the software dependencies within this virtual environment. This will avoid interfering with the other software installed in the VM. To create a virtual environment called `project` that contain all the necessary software for this project please execute the following command:
+
 
 .. code-block:: bash
 
-   conda create --name project
+   conda create --name project sra-tools julia=0.6.1=blas_openblas_200 gcc_linux-64
 
 
-Downloading
-==================
+.. note::
+
+    This command may take some minutes to resolve the dependencies, when is finished correctly, it will require you to accept the changes by inserting the `y` key.
+
+
+To execute any of the commands related to this project, we first need to activate the environment, `project`, that we just created.
+
+.. code-block:: bash
+
+   conda activate project
+
+.. warning::
+
+    If you open a new terminal this environment will not be active by default, therefore would not be able to access the required software unless you activate the `project` environment again. Moreover, to inactivate the environment you can use the `deactivate` conda command:
+
+    .. code-block:: bash
+
+        conda deactivate project
+
+
+    
+Downloading data
+================
+
+To access data from the NCBI archive 
+
+a
+
+
+
 
 
