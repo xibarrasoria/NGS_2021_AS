@@ -1,4 +1,4 @@
-.. discovery_and_quantification
+.. splicing_node_quantification
   
 ============================
 Discovery and Quantification
