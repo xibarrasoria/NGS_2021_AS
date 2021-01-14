@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Differential inclusion analysis &mdash; MicroExonator  documentation</title>
+  <title>Differential inclusion analysis &mdash; NGS2021_AS  documentation</title>
   
 
   
@@ -52,7 +52,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> MicroExonator
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> NGS2021_AS
           
 
           
@@ -100,6 +100,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#optional-parameters">Optional parameters</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#run">Run</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
@@ -127,7 +128,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">MicroExonator</a>
+          <a href="index.html">NGS2021_AS</a>
         
       </nav>
 
@@ -224,7 +225,7 @@ whippet_delta : /path/to/whippet_delta.yaml
   B : sample4,sample5,sample6
 </pre></div>
 </div>
-<p>Where <code class="docutils literal notranslate"><span class="pre">sample1</span> <span class="pre">...</span> <span class="pre">sample6</span></code> correspond to base names given to each RNA-seq samples at the corresponding input files (See <a class="reference internal" href="setup.html"><span class="doc">Setup</span></a>) and <cite>comparison_ID</cite> to any given name for the sheduled comparison. As an example see the <a class="reference download internal" download="" href="_downloads/1f93ac092b843bd1458cd4d903a8652f/whippet_delta.yaml"><code class="xref download docutils literal notranslate"><span class="pre">YAML</span> <span class="pre">file</span></code></a> we used in our publication.</p>
+<p>Where <code class="docutils literal notranslate"><span class="pre">sample1</span> <span class="pre">...</span> <span class="pre">sample6</span></code> correspond to base names given to each RNA-seq samples at the corresponding input files (See <a class="reference internal" href="setup.html"><span class="doc">Setup</span></a>) and <cite>comparison_ID</cite> to any given name for the sheduled comparison. As an example see the <code class="xref download docutils literal notranslate"><span class="pre">YAML</span> <span class="pre">file</span></code> we used in our publication.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Inside this YAML file sample groups must be named <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
@@ -236,6 +237,13 @@ whippet_delta : /path/to/whippet_delta.yaml
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>downstream_only : T
 </pre></div>
 </div>
+</div>
+</div>
+<div class="section" id="run">
+<h2>Run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h2>
+<p>In order to run this module you need to run the standar MicroExonator command, but providing <code class="docutils literal notranslate"><span class="pre">differential_inclusion</span></code> as a target. If you have not run previous <code class="docutils literal notranslate"><span class="pre">discovery</span></code> and <code class="docutils literal notranslate"><span class="pre">quantification</span></code> modules, MicroExonator will include them into the job plan (unless <code class="docutils literal notranslate"><span class="pre">downstream_only</span></code> is set as <code class="docutils literal notranslate"><span class="pre">T</span></code>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snakemake -s MicroExonator.smk  --cluster-config cluster.json --cluster <span class="o">{</span>cluster system params<span class="o">}</span> --use-conda -k  -j <span class="o">{</span>number of parallel jobs<span class="o">}</span> differential_inclusion
+</pre></div>
 </div>
 </div>
 <div class="section" id="output">
@@ -265,7 +273,7 @@ whippet_delta : /path/to/whippet_delta.yaml
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Guillermo E. Parada
+        &copy; Copyright 2021, Guillermo E. Parada
 
     </p>
   </div>

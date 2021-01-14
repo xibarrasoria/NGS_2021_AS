@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MicroExonator'
-copyright = '2020, Guillermo E. Parada'
+project = 'NGS2021_AS'
+copyright = '2021, Guillermo E. Parada'
 author = 'Guillermo E. Parada'
 
 
