@@ -37,7 +37,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation" href="install.html" /> 
+    <link rel="next" title="Setup" href="setup.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,25 +83,16 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="discovery_and_quantification.html">Discovery and Quantification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexing_transcriptome.html">Differential inclusion analysis</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="differential_inclusion_analysis.html">Differential inclusion analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="splicing_node_quantification.html">Discovery and Quantification</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="single_cell_analysis.html">Single cell analysis</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="licence.html">MIT License (MIT)</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_exercises.html">Single cell analysis</a></li>
 </ul>
 
             
@@ -169,37 +160,28 @@
             
   <div class="section" id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
-<p>MicroExonator is a fully-integrated computational pipeline that allows for systematic de novo discovery and quantification
-of microexons using raw RNA-seq data for any organism with a gene annotation. Compared to other available methods MicroExonator
-is more sensitive for discovering smaller microexons and it provides higher specificity for all lengths. Moreover, MicroExonator
-provides integrated downstream comparative analysis between cell types or tissues using
-<a class="reference external" href="https://github.com/timbitz/Whippet.jl">Whippet</a>. (<a class="reference external" href="https://doi.org/10.1016/j.molcel.2018.08.018">Sterne-Weiler et al. 2018</a>).</p>
+<p>Alternative splicing (AS) is a pivotal step for RNA processing in higher eukaryotes and it significantly expands the complexity of the transcriptome. In metazoans AS events are found for most genes, and they are regulated across developmental stages, tissues and cell-types. Many different methods have been proposed to study alternative splicing.  A wide range of computational methods have been proposed to assess AS using RNA-seq data, however many of these require extensive computational resources and often struggle to analyse complex AS events. During this project, you will be introduced to Whippet, <a class="reference external" href="https://github.com/timbitz/Whippet.jl">Whippet</a>. (<a class="reference external" href="https://doi.org/10.1016/j.molcel.2018.08.018">Sterne-Weiler et al. 2018</a>), a light-weight tool developed in the programming language Julia to reliably analyse AS of any complexity using RNA-seq data.</p>
 <dl class="simple">
-<dt>MicroExonator pipeline is divided in several modules:</dt><dd><ul class="simple">
-<li><p>Discover</p></li>
-<li><p>Quantification</p></li>
-<li><p>Differential Inclusion</p></li>
-<li><p>Single cell analysis</p></li>
+<dt>The execution of this project will be separated the following different modules:</dt><dd><ul class="simple">
+<li><p>Setup</p></li>
+<li><p>Indexing transcriptome</p></li>
+<li><p>Splicing node quantification</p></li>
+<li><p>Differential alternative splicing analyses</p></li>
+<li><p>Advanced exercises</p></li>
 </ul>
 </dd>
 </dl>
 <p><strong>Support</strong></p>
 <blockquote>
-<div><p>For questions, ideas, feature requests and potential bug reports submit an issue on our GitHub page or write us at <a class="reference external" href="mailto:gp7&#37;&#52;&#48;sanger&#46;ac&#46;uk">gp7<span>&#64;</span>sanger<span>&#46;</span>ac<span>&#46;</span>uk</a>.</p>
+<div><p>For questions please keep in touch though the slack channel.</p>
 </div></blockquote>
-<div class="toctree-wrapper compound" id="microexonator-install">
+<div class="toctree-wrapper compound" id="project-setup">
 </div>
-<div class="toctree-wrapper compound" id="microexonator-setup">
+<div class="toctree-wrapper compound" id="indexing-transcriptome">
 </div>
-<div class="toctree-wrapper compound" id="microexonator-discovery-and-quantification">
+<div class="toctree-wrapper compound" id="splicing-node-quantification">
 </div>
-<div class="toctree-wrapper compound" id="microexonator-differential-inclusion-analysis">
-</div>
-<div class="toctree-wrapper compound" id="microexonator-single-cell-analysis">
-</div>
-<div class="toctree-wrapper compound" id="microexonator-licence">
-</div>
-<div class="toctree-wrapper compound" id="microexonator-support">
+<div class="toctree-wrapper compound" id="advanced-exercises">
 </div>
 </div>
 
@@ -211,7 +193,7 @@ provides integrated downstream comparative analysis between cell types or tissue
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="setup.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>

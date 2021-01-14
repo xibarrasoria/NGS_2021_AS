@@ -2,67 +2,46 @@
 Overview
 ========
 
-MicroExonator is a fully-integrated computational pipeline that allows for systematic de novo discovery and quantification
-of microexons using raw RNA-seq data for any organism with a gene annotation. Compared to other available methods MicroExonator
-is more sensitive for discovering smaller microexons and it provides higher specificity for all lengths. Moreover, MicroExonator
-provides integrated downstream comparative analysis between cell types or tissues using
-`Whippet <https://github.com/timbitz/Whippet.jl>`_. (`Sterne-Weiler et al. 2018 <https://doi.org/10.1016/j.molcel.2018.08.018>`_).
+Alternative splicing (AS) is a pivotal step for RNA processing in higher eukaryotes and it significantly expands the complexity of the transcriptome. In metazoans AS events are found for most genes, and they are regulated across developmental stages, tissues and cell-types. Many different methods have been proposed to study alternative splicing.  A wide range of computational methods have been proposed to assess AS using RNA-seq data, however many of these require extensive computational resources and often struggle to analyse complex AS events. During this project, you will be introduced to Whippet, `Whippet <https://github.com/timbitz/Whippet.jl>`_. (`Sterne-Weiler et al. 2018 <https://doi.org/10.1016/j.molcel.2018.08.018>`_), a light-weight tool developed in the programming language Julia to reliably analyse AS of any complexity using RNA-seq data.
 
-MicroExonator pipeline is divided in several modules:
-    * Discover
-    * Quantification
-    * Differential Inclusion
-    * Single cell analysis
+
+The execution of this project will be separated the following different modules:
+    * Setup
+    * Indexing transcriptome
+    * Splicing node quantification
+    * Differential alternative splicing analyses
+    * Advanced exercises 
 
 **Support**
 
-    For questions, ideas, feature requests and potential bug reports submit an issue on our GitHub page or write us at gp7@sanger.ac.uk.
+    For questions please keep in touch though the slack channel.
+
+
 
 .. toctree::
-    :name: MicroExonator-install
-    :maxdepth: 1
-    :hidden:
-
-    install
-
-.. toctree::
-    :name: MicroExonator-setup
-    :maxdepth: 1
+    :name: Project-setup
+    :maxdepth: 3
     :hidden:
 
     setup
 
 .. toctree::
-    :name: MicroExonator-discovery-and-quantification
+    :name: Indexing-transcriptome
     :maxdepth: 3
     :hidden:
 
-    discovery_and_quantification
+    indexing_transcriptome
 
 .. toctree::
-    :name: MicroExonator-differential_inclusion_analysis
+    :name: Splicing-node-quantification
     :maxdepth: 3
     :hidden:
 
-    differential_inclusion_analysis
+    splicing_node_quantification
 
 .. toctree::
-    :name: MicroExonator-single_cell_analysis
+    :name: Advanced_exercises
     :maxdepth: 3
     :hidden:
 
-    single_cell_analysis
-
-.. toctree::
-    :name: MicroExonator-Licence
-    :maxdepth: 1
-    :hidden:
-
-    licence
-
-.. toctree::
-    :name: MicroExonator-Support
-    :maxdepth: 1
-    :hidden:
-
-    support
+    advanced_exercises
