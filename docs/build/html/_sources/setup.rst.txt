@@ -1,40 +1,52 @@
 .. setup:
 
-================  
-Installing conda
+===== 
+Setup
+=====
+
+To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this. 
+
+
+Installing Conda
 ================
 
+Conda is an open-source package management system which enables the installation of a variety of different computational tools. To install conda, please follow this `link <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>` and download it inside your `~/Downloads` folder. To start installing conda open the terminal and execute the following command:
+
+.. code-block:: bash
+
+    bash ~/Downloads/Miniconda3-latest-Linux-x86_64.sh
+
+Follow the instructions displayed in the command line by pressing the `Enter` key and writing `yes` when required by the installer. If the installation is successful, you will receive the following message in the prompt.
+
+.. code-block:: bash
+
+    Thank you for installing Miniconda2!
+
+Moreover, if you list content inside the home directory, you will see a `miniconda2` folder. To make sure conda has the rights to write files on this directory and install software, please insert the following commands:
+
+.. code-block:: bash
+
+    sudo chmod 755 -R /home/miniconda2
+    sudo chmod 755 -R /home/manager
+
+Finally, to test everything in place execute the following command, which will instruct conda to update itself:
+
+.. code-block:: bash
+
+   conda update -n base -c defaults conda
 
 
+Creating a conda virtual environment
+------------------------------------
 
-===========================  
-Downloading RNA-seq samples
-===========================
+To install the software necessary for this project, we will first create a virtual environment. Within this virtual environment, we will install the software dependencies to work on this project, without interfering with the other software installed in the VM. To create a virtual environment called `project` you can execute the following command:
+
+.. code-block:: bash
+
+   conda create --name project
 
 
-
-==================  
-Installing Whippet
+Downloading
 ==================
 
 
-
-
-Input RNA-seq data either a ``local_samples.tsv``, ``NCBI_accession_list.txt`` or ``sample_url.tsv`` needs to be defined.
-If you want to run MicroExonator over RNA-seq samples that are locally stored, they need to be defined inside ``local_samples.tsv``.
-MicroExonator can also download and run samples from NCBI if the corresponding SRA accession names are defined inside of ``NCBI_accession_list.txt``,
-in addition any ``fastq.gz`` that can be directly download from a URL can be included into the aalysis by defining them inside a ``sample_url.tsv``.
-You can find examples of these files inside the ``Examples/`` folder.
-Is posible to combine different types of input sources, but at least one of these files needs to be defined inside ``MicroExonator/`` root folder. 
-
-
-
-If you are working on a high performace cluster, then it is very likely that you need to submit jobs to queueing systems such as lsf, qsub, SLURM, etc.
-To make MicroExonator work with these queueing systems, you need to create a `cluster.json` file. 
-We currently provide in the Examples folder a ``cluster.json`` file to run MicroExonator with `lsf <https://www.ibm.com/support/knowledgecenter/en/SSETD4/product_welcome_platform_lsf.html>`_.
-To adapt MicroExonator to other quequing systems please see the `SnakeMake documentation <https://snakemake.readthedocs.io/en/stable/snakefiles/configuration.html?highlight=cluster.json#cluster-configuration>`_.
-
-
-
-Each MicroExonator's module has certain compulsory and optional parameters that needs to be defined inside a ``config.yaml`` file.
-The necesary content of ``config.yaml`` is described on each moudle section and examples can be found at the ``Examples/`` folder.

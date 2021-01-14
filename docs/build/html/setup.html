@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installing conda &mdash; NGS2021_AS  documentation</title>
+  <title>Setup &mdash; NGS2021_AS  documentation</title>
   
 
   
@@ -38,7 +38,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Differential inclusion analysis" href="indexing_transcriptome.html" />
-    <link rel="prev" title="Overview" href="index.html" /> 
+    <link rel="prev" title="Using RNA-seq to evaulate alternative splicing" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,9 +84,14 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing conda</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#downloading-rna-seq-samples">Downloading RNA-seq samples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#installing-whippet">Installing Whippet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installing-conda">Installing Conda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-conda-virtual-environment">Creating a conda virtual environment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading">Downloading</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="indexing_transcriptome.html">Differential inclusion analysis</a></li>
@@ -142,7 +147,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Installing conda</li>
+      <li>Setup</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -161,26 +166,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="installing-conda">
-<h1>Installing conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="setup">
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this.</p>
+<div class="section" id="installing-conda">
+<h2>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">¶</a></h2>
+<p>Conda is an open-source package management system which enables the installation of a variety of different computational tools. To install conda, please follow this <cite>link &lt;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&gt;</cite> and download it inside your <cite>~/Downloads</cite> folder. To start installing conda open the terminal and execute the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash ~/Downloads/Miniconda3-latest-Linux-x86_64.sh
+</pre></div>
 </div>
-<div class="section" id="downloading-rna-seq-samples">
-<h1>Downloading RNA-seq samples<a class="headerlink" href="#downloading-rna-seq-samples" title="Permalink to this headline">¶</a></h1>
+<p>Follow the instructions displayed in the command line by pressing the <cite>Enter</cite> key and writing <cite>yes</cite> when required by the installer. If the installation is successful, you will receive the following message in the prompt.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Thank you <span class="k">for</span> installing Miniconda2!
+</pre></div>
 </div>
-<div class="section" id="installing-whippet">
-<h1>Installing Whippet<a class="headerlink" href="#installing-whippet" title="Permalink to this headline">¶</a></h1>
-<p>Input RNA-seq data either a <code class="docutils literal notranslate"><span class="pre">local_samples.tsv</span></code>, <code class="docutils literal notranslate"><span class="pre">NCBI_accession_list.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">sample_url.tsv</span></code> needs to be defined.
-If you want to run MicroExonator over RNA-seq samples that are locally stored, they need to be defined inside <code class="docutils literal notranslate"><span class="pre">local_samples.tsv</span></code>.
-MicroExonator can also download and run samples from NCBI if the corresponding SRA accession names are defined inside of <code class="docutils literal notranslate"><span class="pre">NCBI_accession_list.txt</span></code>,
-in addition any <code class="docutils literal notranslate"><span class="pre">fastq.gz</span></code> that can be directly download from a URL can be included into the aalysis by defining them inside a <code class="docutils literal notranslate"><span class="pre">sample_url.tsv</span></code>.
-You can find examples of these files inside the <code class="docutils literal notranslate"><span class="pre">Examples/</span></code> folder.
-Is posible to combine different types of input sources, but at least one of these files needs to be defined inside <code class="docutils literal notranslate"><span class="pre">MicroExonator/</span></code> root folder.</p>
-<p>If you are working on a high performace cluster, then it is very likely that you need to submit jobs to queueing systems such as lsf, qsub, SLURM, etc.
-To make MicroExonator work with these queueing systems, you need to create a <cite>cluster.json</cite> file.
-We currently provide in the Examples folder a <code class="docutils literal notranslate"><span class="pre">cluster.json</span></code> file to run MicroExonator with <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/en/SSETD4/product_welcome_platform_lsf.html">lsf</a>.
-To adapt MicroExonator to other quequing systems please see the <a class="reference external" href="https://snakemake.readthedocs.io/en/stable/snakefiles/configuration.html?highlight=cluster.json#cluster-configuration">SnakeMake documentation</a>.</p>
-<p>Each MicroExonator’s module has certain compulsory and optional parameters that needs to be defined inside a <code class="docutils literal notranslate"><span class="pre">config.yaml</span></code> file.
-The necesary content of <code class="docutils literal notranslate"><span class="pre">config.yaml</span></code> is described on each moudle section and examples can be found at the <code class="docutils literal notranslate"><span class="pre">Examples/</span></code> folder.</p>
+<p>Moreover, if you list content inside the home directory, you will see a <cite>miniconda2</cite> folder. To make sure conda has the rights to write files on this directory and install software, please insert the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo chmod <span class="m">755</span> -R /home/miniconda2
+sudo chmod <span class="m">755</span> -R /home/manager
+</pre></div>
+</div>
+<p>Finally, to test everything in place execute the following command, which will instruct conda to update itself:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda update -n base -c defaults conda
+</pre></div>
+</div>
+<div class="section" id="creating-a-conda-virtual-environment">
+<h3>Creating a conda virtual environment<a class="headerlink" href="#creating-a-conda-virtual-environment" title="Permalink to this headline">¶</a></h3>
+<p>To install the software necessary for this project, we will first create a virtual environment. Within this virtual environment, we will install the software dependencies to work on this project, without interfering with the other software installed in the VM. To create a virtual environment called <cite>project</cite> you can execute the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create --name project
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="downloading">
+<h2>Downloading<a class="headerlink" href="#downloading" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -194,7 +212,7 @@ The necesary content of <code class="docutils literal notranslate"><span class="
         <a href="indexing_transcriptome.html" class="btn btn-neutral float-right" title="Differential inclusion analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Using RNA-seq to evaulate alternative splicing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
