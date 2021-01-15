@@ -12,7 +12,7 @@ Congratulations if you have reached this point! This is the final step of the an
 
 Where:
     * ``{path_bin}`` needs to be replaced by the path to find the ``whippet-delta.jl`` script.
-    * ``-a``/``-b`` input a comma-separated list the ``.psi.gz`` files obtained for each condition.
+    * ``-a``/``-b`` are input a comma-separated list the ``.psi.gz`` files obtained for each condition.
     * ``{output_basename}`` should be replaced by any desired output name.
 
 
