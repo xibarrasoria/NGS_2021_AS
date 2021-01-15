@@ -10,7 +10,10 @@ Congratulations if you have reached this point! This is the final step of the an
 
     julia {path_bin}/whippet-delta.jl -a sample1.psi.gz,sample1.psi.gz,sample1.psi.gz -b sample4.psi.gz,sample5.psi.gz,sample6.psi.gz -o {output_basename}
 
-Where ``{path_bin}`` needs to be replaced by the path to find the ``whippet-delta.jl`` script, -a/-b input a comma-separated list the ``.psi.gz`` files obtained for each condition and ``{output_basename}`` should be replaced by any desired output name.
+Where:
+    * ``{path_bin}`` needs to be replaced by the path to find the ``whippet-delta.jl`` script.
+    * ``-a``/``-b`` input a comma-separated list the ``.psi.gz`` files obtained for each condition.
+    * ``{output_basename}`` should be replaced by any desired output name.
 
 
 .. admonition:: Challenge 3
@@ -20,7 +23,7 @@ Where ``{path_bin}`` needs to be replaced by the path to find the ``whippet-delt
 
 .. admonition:: Challenge 4
 
-    Find on `Whippet's <https://github.com/timbitz/Whippet.jl>`_ documentation about the obtained results. Particularly focus on interpreting the last file obtained ``.diff.gz`` file. According to this, answere the following questions:
+    Find on `Whippet's <https://github.com/timbitz/Whippet.jl>`_ documentation about the obtained results. Particularly focus on interpreting the last file obtained ``.diff.gz`` file. According to this, answer the following questions:
 
         1. How many differentially included nodes did you find? (See documentation to find recommendations from the authors)
         2. How many of them might be biologically relevant based on DeltaPsi obtained values?

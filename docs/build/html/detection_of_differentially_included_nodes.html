@@ -168,14 +168,21 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>julia <span class="o">{</span>path_bin<span class="o">}</span>/whippet-delta.jl -a sample1.psi.gz,sample1.psi.gz,sample1.psi.gz -b sample4.psi.gz,sample5.psi.gz,sample6.psi.gz -o <span class="o">{</span>output_basename<span class="o">}</span>
 </pre></div>
 </div>
-<p>Where <code class="docutils literal notranslate"><span class="pre">{path_bin}</span></code> needs to be replaced by the path to find the <code class="docutils literal notranslate"><span class="pre">whippet-delta.jl</span></code> script, -a/-b input a comma-separated list the <code class="docutils literal notranslate"><span class="pre">.psi.gz</span></code> files obtained for each condition and <code class="docutils literal notranslate"><span class="pre">{output_basename}</span></code> should be replaced by any desired output name.</p>
+<dl class="simple">
+<dt>Where:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">{path_bin}</span></code> needs to be replaced by the path to find the <code class="docutils literal notranslate"><span class="pre">whippet-delta.jl</span></code> script.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-a</span></code>/<code class="docutils literal notranslate"><span class="pre">-b</span></code> input a comma-separated list the <code class="docutils literal notranslate"><span class="pre">.psi.gz</span></code> files obtained for each condition.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">{output_basename}</span></code> should be replaced by any desired output name.</p></li>
+</ul>
+</dd>
+</dl>
 <div class="admonition-challenge-3 admonition">
 <p class="admonition-title">Challenge 3</p>
 <p>Run the this command over your samples!</p>
 </div>
 <div class="admonition-challenge-4 admonition">
 <p class="admonition-title">Challenge 4</p>
-<p>Find on <a class="reference external" href="https://github.com/timbitz/Whippet.jl">Whippet’s</a> documentation about the obtained results. Particularly focus on interpreting the last file obtained <code class="docutils literal notranslate"><span class="pre">.diff.gz</span></code> file. According to this, answere the following questions:</p>
+<p>Find on <a class="reference external" href="https://github.com/timbitz/Whippet.jl">Whippet’s</a> documentation about the obtained results. Particularly focus on interpreting the last file obtained <code class="docutils literal notranslate"><span class="pre">.diff.gz</span></code> file. According to this, answer the following questions:</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>How many differentially included nodes did you find? (See documentation to find recommendations from the authors)</p></li>
