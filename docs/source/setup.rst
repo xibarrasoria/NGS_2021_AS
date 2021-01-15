@@ -107,7 +107,7 @@ To access data from the ``NCBI archive``, we are going to use fastq-dump, which 
 Exercise 0.1
 ^^^^^^^^^^^^
 Take a look inside the `NGS_2021_AS` folder and investigate the commands used.
-A) Go to `SRA website<https://www.ncbi.nlm.nih.gov/sra>`_. and which project the data you are downloading is coming from.
+A) Go to `SRA <https://www.ncbi.nlm.nih.gov/sra>`_ and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from? 
 
 .. hint:: Identify the accession code of one of the files and use the search button.
@@ -127,11 +127,11 @@ Exercise 0.2
 ^^^^^^^^^^^^
 Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to `Data/samples`
 
-.. hint:: Check Data/samples/download.sh file
+.. hint:: Check ``Data/samples/download.sh`` file and the run metadata available on ``SRA``.
 
 .. DANGER::
 
-    Do not execute data/samples/download.sh again, otherwise you will re-write the downloaded data.
+    Do not execute ``data/samples/download.sh`` again, otherwise you will re-write the downloaded data. But if this happened, do not panic. Re-withing files is a mistake that is far more frequent that one would expect. 
 
 Exercise 0.3
 ^^^^^^^^^^^^

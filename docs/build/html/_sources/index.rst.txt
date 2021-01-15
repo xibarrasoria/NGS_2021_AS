@@ -36,18 +36,18 @@ The execution of this project will be separated the following different modules:
 
 
 .. toctree::
-    :name: Indexing-transcriptome
+    :name: Indexing-transcriptome-and-quant
     :maxdepth: 3
     :hidden:
 
-    indexing_transcriptome
+    indexing_and_quantifying
 
 .. toctree::
-    :name: Splicing-node-quantification
+    :name: Detection-of-differentially-included-nodes
     :maxdepth: 3
     :hidden:
 
-    splicing_node_quantification
+    detection_of_differentially_included_nodes
 
 .. toctree::
     :name: Advanced_exercises

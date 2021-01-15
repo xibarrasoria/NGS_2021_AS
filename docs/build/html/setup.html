@@ -106,13 +106,13 @@
 <li class="toctree-l1"><a class="reference internal" href="install_whippet.html">Whippet: a fast and accurate tool for AS quantification</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="indexing_transcriptome.html">Differential inclusion analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexing_and_quantifying.html">Transcriptome guided quantification of isoforms</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="splicing_node_quantification.html">Discovery and Quantification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="detection_of_differentially_included_nodes.html">Detection of differentially included nodes</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="advanced_exercises.html">Single cell analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_exercises.html">Advanced exercises</a></li>
 </ul>
 
             
@@ -252,7 +252,7 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <div class="section" id="exercise-0-1">
 <h4>Exercise 0.1<a class="headerlink" href="#exercise-0-1" title="Permalink to this headline">¶</a></h4>
 <p>Take a look inside the <cite>NGS_2021_AS</cite> folder and investigate the commands used.
-A) Go to <a href="#id2"><span class="problematic" id="id3">`SRA website&lt;https://www.ncbi.nlm.nih.gov/sra&gt;`_</span></a>. and which project the data you are downloading is coming from.
+A) Go to <a class="reference external" href="https://www.ncbi.nlm.nih.gov/sra">SRA</a> and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from?</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -275,11 +275,11 @@ identify the project this data is coming from. Which organism are they coming fr
 <p>Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to <cite>Data/samples</cite></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Check Data/samples/download.sh file</p>
+<p>Check <code class="docutils literal notranslate"><span class="pre">Data/samples/download.sh</span></code> file and the run metadata available on <code class="docutils literal notranslate"><span class="pre">SRA</span></code>.</p>
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Do not execute data/samples/download.sh again, otherwise you will re-write the downloaded data.</p>
+<p>Do not execute <code class="docutils literal notranslate"><span class="pre">data/samples/download.sh</span></code> again, otherwise you will re-write the downloaded data. But if this happened, do not panic. Re-withing files is a mistake that is far more frequent that one would expect.</p>
 </div>
 </div>
 <div class="section" id="exercise-0-3">

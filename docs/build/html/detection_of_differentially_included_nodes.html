@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Support &mdash; NGS2021_AS  documentation</title>
+  <title>Detection of differentially included nodes &mdash; NGS2021_AS  documentation</title>
   
 
   
@@ -36,7 +36,9 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Advanced exercises" href="advanced_exercises.html" />
+    <link rel="prev" title="Transcriptome guided quantification of isoforms" href="indexing_and_quantifying.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,13 +90,13 @@
 <li class="toctree-l1"><a class="reference internal" href="install_whippet.html">Whippet: a fast and accurate tool for AS quantification</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="indexing_transcriptome.html">Differential inclusion analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indexing_and_quantifying.html">Transcriptome guided quantification of isoforms</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Detection of differentially included nodes</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="splicing_node_quantification.html">Discovery and Quantification</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="advanced_exercises.html">Single cell analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_exercises.html">Advanced exercises</a></li>
 </ul>
 
             
@@ -141,13 +143,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Support</li>
+      <li>Detection of differentially included nodes</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/support.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/detection_of_differentially_included_nodes.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -160,9 +162,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="support">
-<h1>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h1>
-<p>For questions, ideas, feature requests and potential bug reports please contact <a class="reference external" href="mailto:gp7&#37;&#52;&#48;sanger&#46;ac&#46;uk">gp7<span>&#64;</span>sanger<span>&#46;</span>ac<span>&#46;</span>uk</a>.</p>
+  <div class="section" id="detection-of-differentially-included-nodes">
+<h1>Detection of differentially included nodes<a class="headerlink" href="#detection-of-differentially-included-nodes" title="Permalink to this headline">¶</a></h1>
+<p>Congratulations if you have reached this point! This is the final step of the analysis :). To achieve the aim of determining the effect of <code class="docutils literal notranslate"><span class="pre">TBPH</span> <span class="pre">knockout</span></code> you just need to run whippet with the following syntax.</p>
+<p>julia {path_bin}/whippet-delta.jl -a sample1.psi.gz,sample1.psi.gz,sample1.psi.gz -b sample4.psi.gz,sample5.psi.gz,sample6.psi.gz -o {output_basename}</p>
+<p>Where <code class="docutils literal notranslate"><span class="pre">{path_bin}</span></code> needs to be replaced by the path to find the <code class="docutils literal notranslate"><span class="pre">whippet-delta.jl</span></code> script, -a/-b input a comma-separated list the <code class="docutils literal notranslate"><span class="pre">.psi.gz</span></code> files obtained for each condition and <code class="docutils literal notranslate"><span class="pre">{output_basename}</span></code> should be replaced by any desired output name.</p>
 </div>
 
 
@@ -170,6 +174,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="advanced_exercises.html" class="btn btn-neutral float-right" title="Advanced exercises" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="indexing_and_quantifying.html" class="btn btn-neutral float-left" title="Transcriptome guided quantification of isoforms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
