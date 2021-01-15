@@ -1,5 +1,5 @@
 ==============================================
-Using RNA-seq to evaulate alternative splicing
+Using RNA-seq to quantify alternative splicing
 ==============================================
 
 Alternative splicing (AS) is a pivotal step for RNA processing in higher eukaryotes and it significantly expands the complexity of the transcriptome. In metazoans AS events are found for most genes, and they are regulated across developmental stages, tissues and cell-types. A wide range of computational methods have been proposed to assess AS using RNA-seq data, however many of these require extensive computational resources and often struggle to analyse complex AS events. During this project, you will be introduced to Whippet, `Whippet <https://github.com/timbitz/Whippet.jl>`_. (`Sterne-Weiler et al. 2018 <https://doi.org/10.1016/j.molcel.2018.08.018>`_), a light-weight tool developed in the programming language Julia to reliably analyse AS of any complexity using RNA-seq data.
@@ -7,10 +7,10 @@ Alternative splicing (AS) is a pivotal step for RNA processing in higher eukaryo
 
 The execution of this project will be separated the following different modules:
     * Setup
-    * Indexing transcriptome
+    * Introduction to Whippet
     * Splicing node quantification
     * Differential alternative splicing analyses
-    * Advanced exercises 
+    * Advanced exercises (only for the brave)
 
 .. important:: To get the lasted version of these instructions make sure to delete your cookies and refresh. Do it once a day or alternatively you can use the incognito mode to disable the cookies. Do not miss possible updates on this document :)
 
