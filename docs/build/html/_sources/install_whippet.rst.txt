@@ -14,5 +14,40 @@ Whippet is a fast, lightweight and accurate method for quantifying alternative s
    Figure 1: An overview of Whippet’s computational workflow to quantify alternative splicing events. A. ​Illustration of Whippet’s Node assignment given an example gene annotation with two isoforms. ​B. Representation of the CSG model that would be built given the example gene annotation provided above. ​C. Transcriptome indexing from CSGs generated for each annotated gene. ​D. Read alignment to the indexed transcriptome. E. Alternative splicing quantification through node PSI estimation, which takes into account the full set of RNA-seq reads aligned to edges that connect or exclude the corresponding splicing nodes. This figure was taken from `Whippet's github repository <https://github.com/timbitz/Whippet.jl>`_. For further information about the mode can be found at their publication `Sterne-Weiler et al. 2018 <https://doi.org/10.1016/j.molcel.2018.08.018>`_.
 
 
+Installation
+------------
+
+Whippet was developed as a `Julia <https://julialang.org/>`_ package. During the previous section module (Setup) whe have already installed Julia. However, we now need to install Whippet's package. To this end, first we need to enter Julia's interactive mode by just typing: 
+
+.. code-block:: bash
+
+   julia
+
+.. important:: Make sure your ``project`` conda environment is activated. Otherwise julia will not be found in the list of available software. 
+
+Then from this interactive mode we can run
+
+.. code-block:: julia
+
+   Pkg.add("Whippet")
+
+.. note:: 
+
+   This command may take around 30 mins to install. In the mind time we recommend you to read Whippet's paper. Please let us know if you get caught beyond the `Paywall <https://en.wikipedia.org/wiki/Paywall>`_.
+
+Once the installation is finished, you can find the path where Whippet was installed by using the following command under Julia's interactive mode:
+
+.. code-block:: julia
+
+   Pkg.dir("Whippet")
+
+Find out how to exit Julia's interactive mode on its `documentation <https://docs.julialang.org/en/v1/manual/getting-started/#:~:text=To%20exit%20the%20interactive%20session,prompts%20the%20user%20for%20input.>`_.
+
+
+In order to execute Whippet you will need to access its installation path. Inside this path you will find a folder called `bin` where all Whippet's script are ready to use! 
+
+.. important:: Make sure you save the path where Whippet is installed on a block note. It will be hard to remember otherwise.
+
+
 
 
