@@ -6,6 +6,14 @@ Whippet: a fast and accurate tool for AS quantification
 
 To install MicroExonator follow these instructions:
 
+
+.. figure:: whippet_model.gif
+   :scale: 50 %
+   :alt: whippet model
+
+   Figure 1: An overview of Whippet’s computational workflow to quantify alternative splicing events. A. ​Illustration of Whippet’s Node assignment given an example gene annotation with two isoforms. ​B. Representation of the CSG model that would be built given the example gene annotation provided above. ​C. Transcriptome indexing from CSGs generated for each annotated gene. ​D. Read alignment to the indexed transcriptome. E. Alternative splicing quantification through node PSI estimation, which takes into account the full set of RNA-seq reads aligned to edges that connect or exclude the corresponding splicing nodes. This figure was taken from Sterne-Weiler ​et. al​ 2018.
+
+
 Clone repository
 =================
 Clone the github repository

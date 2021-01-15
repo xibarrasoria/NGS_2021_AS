@@ -12,7 +12,7 @@ The execution of this project will be separated the following different modules:
     * Differential alternative splicing analyses
     * Advanced exercises 
 
-.. important:: To get the lasted version of these instructions make sure to delete your cookies and refresh. Do it once a day so you don't miss any updates! 
+.. important:: To get the lasted version of these instructions make sure to delete your cookies and refresh. Do it once a day or alternatively you can use the incognito mode to disable the cookies. Do not miss possible updates on this document :)
 
 
 **Support**
