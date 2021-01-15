@@ -54,7 +54,7 @@ To install the software necessary for this project, we will first create a virtu
 
 .. note::
 
-    This command may take some minutes to resolve the dependencies, when is finished correctly, it will require you to accept the changes by inserting the `y` key.
+    This command may take some minutes to resolve the dependencies, when is finished correctly, it will require you to accept the changes by inserting the ``y`` key.
 
 
 To execute any of the commands related to this project, we first need to activate the environment, ``project``, that we just created.
@@ -81,7 +81,7 @@ Before starting developing this project we will need to download all the the nec
 Cloning github repository of this project
 -----------------------------------------
 
-The first step of starting getting the data is to cloning the git repository of this project. To this end, change the directory to the course's folder (using `cd` command) and copy the following command in the terminal:
+The first step of starting getting the data is to cloning the git repository of this project. To this end, change the directory to the course's folder (using ``cd`` command) and copy the following command in the terminal:
 
 .. code-block:: bash
 
@@ -95,7 +95,7 @@ This command will make a clone of the repository at your local computer. After t
     This repository also include the documentation you are currently reading. For more information how this was made visit this `link <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`_. 
 
 
-To access data from the ``NCBI archive``, we are going to use fastq-dump, which is part of `SRA-Tools  <https://ncbi.github.io/sra-tools/>`_. To start efficiently getting the data we are going to execute a `bash` script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using `cd` command) to ``Data/samples/`` and execute the following command:
+To access data from the ``NCBI archive``, we are going to use fastq-dump, which is part of `SRA-Tools  <https://ncbi.github.io/sra-tools/>`_. To start efficiently getting the data we are going to execute a `bash` script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using ``cd`` command) to ``Data/samples/`` and execute the following command:
 
 .. code-block:: bash
 
@@ -106,7 +106,7 @@ To access data from the ``NCBI archive``, we are going to use fastq-dump, which 
 
 Exercise 1
 ^^^^^^^^^^
-Take a look inside the `NGS_2021_AS` folder and investigate the commands used.
+Take a look inside the ``NGS_2021_AS`` folder and investigate the commands used.
 A) Go to `SRA <https://www.ncbi.nlm.nih.gov/sra>`_ and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from? 
 
@@ -114,7 +114,7 @@ identify the project this data is coming from. Which organism are they coming fr
 
 B) Check the metadata of the study and identify the experimental condition of every sample you are currently downloading. Using fastq-dump get the extra 
 
-.. hint:: Check the Study information and click on `All runs`
+.. hint:: Check the Study information and click on ``All runs``
 
 
 Study design
@@ -125,7 +125,7 @@ We are going to first study the effects of TBPH lost of function (LoF) over alte
 
 Exercise 2
 ^^^^^^^^^^
-Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to `Data/samples`
+Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to ``Data/samples``
 
 .. hint:: Check ``Data/samples/download.sh`` file and the run metadata available on ``SRA``.
 

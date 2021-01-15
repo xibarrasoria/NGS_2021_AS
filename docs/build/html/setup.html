@@ -213,7 +213,7 @@ sudo chmod <span class="m">755</span> -R /home/manager
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This command may take some minutes to resolve the dependencies, when is finished correctly, it will require you to accept the changes by inserting the <cite>y</cite> key.</p>
+<p>This command may take some minutes to resolve the dependencies, when is finished correctly, it will require you to accept the changes by inserting the <code class="docutils literal notranslate"><span class="pre">y</span></code> key.</p>
 </div>
 <p>To execute any of the commands related to this project, we first need to activate the environment, <code class="docutils literal notranslate"><span class="pre">project</span></code>, that we just created.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda activate project
@@ -232,7 +232,7 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <p>Before starting developing this project we will need to download all the the necessary data. Similarly to the sofware we installed, the data is all available online.</p>
 <div class="section" id="cloning-github-repository-of-this-project">
 <h3>Cloning github repository of this project<a class="headerlink" href="#cloning-github-repository-of-this-project" title="Permalink to this headline">¶</a></h3>
-<p>The first step of starting getting the data is to cloning the git repository of this project. To this end, change the directory to the course’s folder (using <cite>cd</cite> command) and copy the following command in the terminal:</p>
+<p>The first step of starting getting the data is to cloning the git repository of this project. To this end, change the directory to the course’s folder (using <code class="docutils literal notranslate"><span class="pre">cd</span></code> command) and copy the following command in the terminal:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/geparada/NGS_2021_AS
 </pre></div>
 </div>
@@ -241,7 +241,7 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <p class="admonition-title">Do you want to know more?</p>
 <p>This repository also include the documentation you are currently reading. For more information how this was made visit this <a class="reference external" href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">link</a>.</p>
 </div>
-<p>To access data from the <code class="docutils literal notranslate"><span class="pre">NCBI</span> <span class="pre">archive</span></code>, we are going to use fastq-dump, which is part of <a class="reference external" href="https://ncbi.github.io/sra-tools/">SRA-Tools</a>. To start efficiently getting the data we are going to execute a <cite>bash</cite> script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using <cite>cd</cite> command) to <code class="docutils literal notranslate"><span class="pre">Data/samples/</span></code> and execute the following command:</p>
+<p>To access data from the <code class="docutils literal notranslate"><span class="pre">NCBI</span> <span class="pre">archive</span></code>, we are going to use fastq-dump, which is part of <a class="reference external" href="https://ncbi.github.io/sra-tools/">SRA-Tools</a>. To start efficiently getting the data we are going to execute a <cite>bash</cite> script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using <code class="docutils literal notranslate"><span class="pre">cd</span></code> command) to <code class="docutils literal notranslate"><span class="pre">Data/samples/</span></code> and execute the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash download.sh <span class="p">&amp;</span>
 </pre></div>
 </div>
@@ -251,7 +251,7 @@ sudo chmod <span class="m">755</span> -R /home/manager
 </div>
 <div class="section" id="exercise-1">
 <h4>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h4>
-<p>Take a look inside the <cite>NGS_2021_AS</cite> folder and investigate the commands used.
+<p>Take a look inside the <code class="docutils literal notranslate"><span class="pre">NGS_2021_AS</span></code> folder and investigate the commands used.
 A) Go to <a class="reference external" href="https://www.ncbi.nlm.nih.gov/sra">SRA</a> and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from?</p>
 <div class="admonition hint">
@@ -263,7 +263,7 @@ identify the project this data is coming from. Which organism are they coming fr
 </ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Check the Study information and click on <cite>All runs</cite></p>
+<p>Check the Study information and click on <code class="docutils literal notranslate"><span class="pre">All</span> <span class="pre">runs</span></code></p>
 </div>
 </div>
 </div>
@@ -272,7 +272,7 @@ identify the project this data is coming from. Which organism are they coming fr
 <p>We are going to first study the effects of TBPH lost of function (LoF) over alternative splicing. For more details about the study please check the information of the study and its corresponding publication.</p>
 <div class="section" id="exercise-2">
 <h4>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h4>
-<p>Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to <cite>Data/samples</cite></p>
+<p>Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to <code class="docutils literal notranslate"><span class="pre">Data/samples</span></code></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Check <code class="docutils literal notranslate"><span class="pre">Data/samples/download.sh</span></code> file and the run metadata available on <code class="docutils literal notranslate"><span class="pre">SRA</span></code>.</p>
