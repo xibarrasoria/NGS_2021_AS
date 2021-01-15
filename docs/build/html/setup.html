@@ -87,7 +87,18 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setup</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installing-conda">Installing Conda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installing-software-dependencies">Installing software dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#downloading-data">Downloading data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-the-data-and-understanding-the-study-design">Downloading the data and understanding the study design</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cloning-github-repository-of-this-project">Cloning github repository of this project</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exercise-0-1">Exercise 0.1</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#study-design">Study design</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exercise-0-2">Exercise 0.2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exercise-0-3">Exercise 0.3</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -166,10 +177,10 @@
             
   <div class="section" id="setup">
 <h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
-<p>To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this.</p>
+<p>The life of the bioinformatician is not easy as some may thing. Big part of the time they are trying to install sofware and reproduce other researcher methods. In this section you will download all the software and necessary to data to conduct alternative splicing analysis using RNA-seq. To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this.</p>
 <div class="section" id="installing-conda">
 <h2>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">¶</a></h2>
-<p>Conda is an open-source package management system which enables the installation of a variety of different computational tools. To install conda, please follow this <cite>link &lt;https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&gt;</cite> and download it inside your <cite>~/Downloads</cite> folder. To start installing conda open the terminal and execute the following command:</p>
+<p>Conda is an open-source package management system which enables the installation of a variety of different computational tools. To install conda, please follow this <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">link</a>. and download it inside your <cite>~/Downloads</cite> folder. To start installing conda open the terminal and execute the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash ~/Downloads/Miniconda3-latest-Linux-x86_64.sh
 </pre></div>
 </div>
@@ -205,18 +216,85 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda activate project
 </pre></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>If you open a new terminal this environment will not be active by default, therefore would not be able to access the required software unless you activate the <cite>project</cite> environment again. Moreover, to inactivate the environment you can use the <cite>deactivate</cite> conda command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda deactivate project
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="downloading-data">
-<h2>Downloading data<a class="headerlink" href="#downloading-data" title="Permalink to this headline">¶</a></h2>
-<p>To access data from the NCBI archive</p>
-<p>a</p>
+<div class="section" id="downloading-the-data-and-understanding-the-study-design">
+<h2>Downloading the data and understanding the study design<a class="headerlink" href="#downloading-the-data-and-understanding-the-study-design" title="Permalink to this headline">¶</a></h2>
+<p>Before starting developing this project we will need to download all the the necessary data. Similarly to the sofware we installed, the data is all available online.</p>
+<div class="section" id="cloning-github-repository-of-this-project">
+<h3>Cloning github repository of this project<a class="headerlink" href="#cloning-github-repository-of-this-project" title="Permalink to this headline">¶</a></h3>
+<p>The first step of starting getting the data is to cloning the git repository of this project. To this end, change the directory to the course’s folder (using <cite>cd</cite> command) and copy the following command in the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/geparada/NGS_2021_AS
+</pre></div>
+</div>
+<p>This command will make a clone of the repository at your local computer. After the command finish running, a new folder (called <cite>NGS_2021_AS</cite>) will be created at the directory where you executed the command.</p>
+<div class="admonition-do-you-want-to-know-more admonition">
+<p class="admonition-title">Do you want to know more?</p>
+<p>This repository also include the documentation you are currently reading. For more information how this was made visit this <a class="reference external" href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">link</a>.</p>
+</div>
+<p>To access data from the <cite>NCBI archive</cite>, we are going to use fastq-dump, which is part of <a class="reference external" href="https://ncbi.github.io/sra-tools/">SRA-Tools</a>. To start efficiently getting the data we are going to execute a <cite>bash</cite> script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using <cite>cd</cite> command) to <cite>Data/samples/</cite> and execute the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash download.sh <span class="p">&amp;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This command will download five <cite>fastq.gz</cite> files. The character <cite>&amp;</cite> will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use <cite>ls -lht</cite> to check the progress in that <cite>Data/samples/</cite>.</p>
+</div>
+<div class="section" id="exercise-0-1">
+<h4>Exercise 0.1<a class="headerlink" href="#exercise-0-1" title="Permalink to this headline">¶</a></h4>
+<p>Take a look inside the <cite>NGS_2021_AS</cite> folder and investigate the commands used.
+A) Go to <a href="#id2"><span class="problematic" id="id3">`SRA website&lt;https://www.ncbi.nlm.nih.gov/sra&gt;`_</span></a>. and which project the data you are downloading is coming from.
+identify the project this data is coming from. Which organism are they coming from?</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Identify the accession code of one of the files and use the search button.</p>
+</div>
+<ol class="upperalpha simple" start="2">
+<li><p>Check the metadata of the study and identify the experimental condition of every sample you are currently downloading. Using fastq-dump get the extra</p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Check the Study information and click on <cite>All runs</cite></p>
+</div>
+</div>
+</div>
+<div class="section" id="study-design">
+<h3>Study design<a class="headerlink" href="#study-design" title="Permalink to this headline">¶</a></h3>
+<p>We are going to first study the effects of TBPH lost of function (LoF) over alternative splicing. For more details about the study please check the information of the study and its corresponding publication.</p>
+<div class="section" id="exercise-0-2">
+<h4>Exercise 0.2<a class="headerlink" href="#exercise-0-2" title="Permalink to this headline">¶</a></h4>
+<p>Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to <cite>Data/samples</cite></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Check Data/samples/download.sh file</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Do not execute data/samples/download.sh again, otherwise you will re-write the downloaded data.</p>
+</div>
+</div>
+<div class="section" id="exercise-0-3">
+<h4>Exercise 0.3<a class="headerlink" href="#exercise-0-3" title="Permalink to this headline">¶</a></h4>
+<p>To make sure you got the final result, your collaborator sent you the expected sizes from the files you are downloading.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>total 2728888
+-rw-r--r--  1 gp7  1535   221M 01 Jan 14:14 SRR363940.fastq.gz
+-rw-r--r--  1 gp7  1535   330M 01 Jan 14:09 SRR363938.fastq.gz
+-rw-r--r--  1 gp7  1535   155M 01 Jan 14:02 SRR363935.fastq.gz
+-rw-r--r--  1 gp7  1535   226M 01 Jan 13:59 SRR363932.fastq.gz
+-rw-r--r--  1 gp7  1535   133M 01 Jan 13:54 SRR363931.fastq.gz
+-rw-r--r--  1 gp7  1535   240M 01 Jan 13:52 SRR363927.fastq.gz
+-rw-r--r--  1 gp7  1535   180B 01 Jan 13:41 download.sh
+</pre></div>
+</div>
+<p>Which command do you think your collaborator used to generate this? Use the same command to check if you were able to download the samples properly. If you are still downloading them, please continue with the following modules.</p>
+</div>
+</div>
 </div>
 </div>
 

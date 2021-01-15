@@ -1,0 +1,8 @@
+total 2728888
+-rw-r--r--  1 gp7  1535   221M 14 Jan 04:14 SRR363940.fastq.gz
+-rw-r--r--  1 gp7  1535   330M 14 Jan 04:09 SRR363938.fastq.gz
+-rw-r--r--  1 gp7  1535   155M 14 Jan 04:02 SRR363935.fastq.gz
+-rw-r--r--  1 gp7  1535   226M 14 Jan 03:59 SRR363932.fastq.gz
+-rw-r--r--  1 gp7  1535   133M 14 Jan 03:54 SRR363931.fastq.gz
+-rw-r--r--  1 gp7  1535   240M 14 Jan 03:52 SRR363927.fastq.gz
+-rw-r--r--  1 gp7  1535   180B 14 Jan 03:41 download.sh

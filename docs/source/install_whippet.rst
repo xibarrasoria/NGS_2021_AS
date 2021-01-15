@@ -1,7 +1,7 @@
-.. _Installation:
+.. _whippet:
   
 =====================
-Installation
+Whippet: a fast and accurate tool for AS quantification 
 =====================
 
 To install MicroExonator follow these instructions:
