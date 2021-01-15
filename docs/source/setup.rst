@@ -92,7 +92,7 @@ This command will make a clone of the repository at your local computer. After t
 
 .. admonition:: Do you want to know more?
 
-    This repository also include the documentation you are currently reading. For more information how this was made visit this `link <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`_. 
+    In addition to the data, this repository also include the documentation you are currently reading. For have an idea of how this type of documentation can be created for a repository visit this `link <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`_. 
 
 
 To access data from the ``NCBI archive``, we are going to use fastq-dump, which is part of `SRA-Tools  <https://ncbi.github.io/sra-tools/>`_. To start efficiently getting the data we are going to execute a `bash` script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using ``cd`` command) to ``Data/samples/`` and execute the following command:
@@ -107,6 +107,7 @@ To access data from the ``NCBI archive``, we are going to use fastq-dump, which 
 Exercise 1
 ^^^^^^^^^^
 Take a look inside the ``NGS_2021_AS`` folder and investigate the commands used.
+
 A) Go to `SRA <https://www.ncbi.nlm.nih.gov/sra>`_ and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from? 
 
