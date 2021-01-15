@@ -55,3 +55,10 @@ The execution of this project will be separated the following different modules:
     :hidden:
 
     advanced_exercises
+
+.. toctree::
+    :name: Licence
+    :maxdepth: 1
+    :hidden:
+
+    licence
