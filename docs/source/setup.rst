@@ -104,8 +104,8 @@ To access data from the ``NCBI archive``, we are going to use fastq-dump, which 
 .. Note:: This command will download five ``fastq.gz`` files. The character ``&`` will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use `ls -lht` to check the progress in that ``Data/samples/``.     
 
 
-Exercise 0.1
-^^^^^^^^^^^^
+Exercise 1
+^^^^^^^^^^
 Take a look inside the `NGS_2021_AS` folder and investigate the commands used.
 A) Go to `SRA <https://www.ncbi.nlm.nih.gov/sra>`_ and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from? 
@@ -123,8 +123,8 @@ Study design
 We are going to first study the effects of TBPH lost of function (LoF) over alternative splicing. For more details about the study please check the information of the study and its corresponding publication. 
 
 
-Exercise 0.2
-^^^^^^^^^^^^
+Exercise 2
+^^^^^^^^^^
 Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to `Data/samples`
 
 .. hint:: Check ``Data/samples/download.sh`` file and the run metadata available on ``SRA``.
@@ -133,8 +133,8 @@ Ops! the bioinformatician who wrote the script forgot to include one sample to s
 
     Do not execute ``data/samples/download.sh`` again, otherwise you will re-write the downloaded data. But if this happened, do not panic. Re-withing files is a mistake that is far more frequent that one would expect. 
 
-Exercise 0.3
-^^^^^^^^^^^^
+Exercise 3
+^^^^^^^^^^
 
 To make sure you got the final result, your collaborator sent you the expected sizes from the files you are downloading.
 

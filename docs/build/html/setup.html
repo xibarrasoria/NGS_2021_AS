@@ -89,12 +89,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#installing-software-dependencies">Installing software dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-the-data-and-understanding-the-study-design">Downloading the data and understanding the study design</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#cloning-github-repository-of-this-project">Cloning github repository of this project</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#exercise-0-1">Exercise 0.1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exercise-1">Exercise 1</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#study-design">Study design</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#exercise-0-2">Exercise 0.2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#exercise-0-3">Exercise 0.3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exercise-2">Exercise 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exercise-3">Exercise 3</a></li>
 </ul>
 </li>
 </ul>
@@ -249,8 +249,8 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <p class="admonition-title">Note</p>
 <p>This command will download five <code class="docutils literal notranslate"><span class="pre">fastq.gz</span></code> files. The character <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use <cite>ls -lht</cite> to check the progress in that <code class="docutils literal notranslate"><span class="pre">Data/samples/</span></code>.</p>
 </div>
-<div class="section" id="exercise-0-1">
-<h4>Exercise 0.1<a class="headerlink" href="#exercise-0-1" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="exercise-1">
+<h4>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h4>
 <p>Take a look inside the <cite>NGS_2021_AS</cite> folder and investigate the commands used.
 A) Go to <a class="reference external" href="https://www.ncbi.nlm.nih.gov/sra">SRA</a> and which project the data you are downloading is coming from.
 identify the project this data is coming from. Which organism are they coming from?</p>
@@ -270,8 +270,8 @@ identify the project this data is coming from. Which organism are they coming fr
 <div class="section" id="study-design">
 <h3>Study design<a class="headerlink" href="#study-design" title="Permalink to this headline">¶</a></h3>
 <p>We are going to first study the effects of TBPH lost of function (LoF) over alternative splicing. For more details about the study please check the information of the study and its corresponding publication.</p>
-<div class="section" id="exercise-0-2">
-<h4>Exercise 0.2<a class="headerlink" href="#exercise-0-2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="exercise-2">
+<h4>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h4>
 <p>Ops! the bioinformatician who wrote the script forgot to include one sample to study the effect of TBPH knockout! Before continue please download this file to <cite>Data/samples</cite></p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -282,8 +282,8 @@ identify the project this data is coming from. Which organism are they coming fr
 <p>Do not execute <code class="docutils literal notranslate"><span class="pre">data/samples/download.sh</span></code> again, otherwise you will re-write the downloaded data. But if this happened, do not panic. Re-withing files is a mistake that is far more frequent that one would expect.</p>
 </div>
 </div>
-<div class="section" id="exercise-0-3">
-<h4>Exercise 0.3<a class="headerlink" href="#exercise-0-3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="exercise-3">
+<h4>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h4>
 <p>To make sure you got the final result, your collaborator sent you the expected sizes from the files you are downloading.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>total 2728888
 -rw-r--r--  1 gp7  1535   221M 01 Jan 14:14 SRR363940.fastq.gz
