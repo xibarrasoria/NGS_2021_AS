@@ -183,22 +183,22 @@
 <p>The life of the bioinformatician is not easy as some may thing. Big part of the time they are trying to install sofware and reproduce other researcher methods. In this section you will download all the software and necessary to data to conduct alternative splicing analysis using RNA-seq. To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this.</p>
 <div class="section" id="installing-conda">
 <h2>Installing Conda<a class="headerlink" href="#installing-conda" title="Permalink to this headline">¶</a></h2>
-<p>Conda is an open-source package management system which enables the installation of a variety of different computational tools. To install conda, please follow this <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">link</a>. and download it inside your <cite>~/Downloads</cite> folder. To start installing conda open the terminal and execute the following command:</p>
+<p>Conda is an open-source package management system which enables the installation of a variety of different computational tools. To install conda, please follow this <a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">link</a>. and download it inside your <code class="docutils literal notranslate"><span class="pre">~/Downloads</span></code> folder. To start installing conda open the terminal and execute the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash ~/Downloads/Miniconda3-latest-Linux-x86_64.sh
 </pre></div>
 </div>
-<p>Follow the instructions displayed in the command line by pressing the <cite>Enter</cite> key and writing <cite>yes</cite> when required by the installer. If the installation is successful, you will receive the following message in the prompt.</p>
+<p>Follow the instructions displayed in the command line by pressing the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key and writing <code class="docutils literal notranslate"><span class="pre">yes</span></code> when required by the installer. If the installation is successful, you will receive the following message in the prompt.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Thank you <span class="k">for</span> installing Miniconda2!
 </pre></div>
 </div>
-<p>Moreover, if you list content inside the home directory, you will see a <cite>miniconda2</cite> folder. To make sure conda has the rights to write files on this directory and install software, please insert the following commands:</p>
+<p>Moreover, if you list content inside the home directory, you will see a <code class="docutils literal notranslate"><span class="pre">miniconda2</span></code> folder. To make sure conda has the rights to write files on this directory and install software, please insert the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo chmod <span class="m">755</span> -R /home/miniconda2
 sudo chmod <span class="m">755</span> -R /home/manager
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The command above will require your password, which is the same than your user name. To check your user name insert <cite>whoami</cite> in the terminal.</p>
+<p>The command above will require your password, which is the same than your user name. To check your user name insert <code class="docutils literal notranslate"><span class="pre">whoami</span></code> in the terminal.</p>
 </div>
 <p>Finally, to test everything in place execute the following command, which will instruct conda to update itself:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda update -n base -c defaults conda
@@ -207,7 +207,7 @@ sudo chmod <span class="m">755</span> -R /home/manager
 </div>
 <div class="section" id="installing-software-dependencies">
 <h2>Installing software dependencies<a class="headerlink" href="#installing-software-dependencies" title="Permalink to this headline">¶</a></h2>
-<p>To install the software necessary for this project, we will first create a virtual environment, and we will install the software dependencies within this virtual environment. This will avoid interfering with the other software installed in the VM. To create a virtual environment called <cite>project</cite> that contain all the necessary software for this project please execute the following command:</p>
+<p>To install the software necessary for this project, we will first create a virtual environment, and we will install the software dependencies within this virtual environment. This will avoid interfering with the other software installed in the VM. To create a virtual environment called <code class="docutils literal notranslate"><span class="pre">project</span></code> that contain all the necessary software for this project please execute the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create --name project sra-tools <span class="nv">julia</span><span class="o">=</span><span class="m">0</span>.6.1<span class="o">=</span>blas_openblas_200 gcc_linux-64
 </pre></div>
 </div>
@@ -215,13 +215,13 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <p class="admonition-title">Note</p>
 <p>This command may take some minutes to resolve the dependencies, when is finished correctly, it will require you to accept the changes by inserting the <cite>y</cite> key.</p>
 </div>
-<p>To execute any of the commands related to this project, we first need to activate the environment, <cite>project</cite>, that we just created.</p>
+<p>To execute any of the commands related to this project, we first need to activate the environment, <code class="docutils literal notranslate"><span class="pre">project</span></code>, that we just created.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda activate project
 </pre></div>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you open a new terminal this environment will not be active by default, therefore would not be able to access the required software unless you activate the <cite>project</cite> environment again. Moreover, to inactivate the environment you can use the <cite>deactivate</cite> conda command:</p>
+<p>If you open a new terminal this environment will not be active by default, therefore would not be able to access the required software unless you activate the <code class="docutils literal notranslate"><span class="pre">project</span></code> environment again. Moreover, to inactivate the environment you can use the <cite>deactivate</cite> conda command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda deactivate project
 </pre></div>
 </div>
@@ -236,18 +236,18 @@ sudo chmod <span class="m">755</span> -R /home/manager
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/geparada/NGS_2021_AS
 </pre></div>
 </div>
-<p>This command will make a clone of the repository at your local computer. After the command finish running, a new folder (called <cite>NGS_2021_AS</cite>) will be created at the directory where you executed the command.</p>
+<p>This command will make a clone of the repository at your local computer. After the command finish running, a new folder (called <code class="docutils literal notranslate"><span class="pre">NGS_2021_AS</span></code>) will be created at the directory where you executed the command.</p>
 <div class="admonition-do-you-want-to-know-more admonition">
 <p class="admonition-title">Do you want to know more?</p>
 <p>This repository also include the documentation you are currently reading. For more information how this was made visit this <a class="reference external" href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">link</a>.</p>
 </div>
-<p>To access data from the <cite>NCBI archive</cite>, we are going to use fastq-dump, which is part of <a class="reference external" href="https://ncbi.github.io/sra-tools/">SRA-Tools</a>. To start efficiently getting the data we are going to execute a <cite>bash</cite> script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using <cite>cd</cite> command) to <cite>Data/samples/</cite> and execute the following command:</p>
+<p>To access data from the <code class="docutils literal notranslate"><span class="pre">NCBI</span> <span class="pre">archive</span></code>, we are going to use fastq-dump, which is part of <a class="reference external" href="https://ncbi.github.io/sra-tools/">SRA-Tools</a>. To start efficiently getting the data we are going to execute a <cite>bash</cite> script which will execute fastq-dump to download some RNA-seq samples. To run this script, change directory (using <cite>cd</cite> command) to <code class="docutils literal notranslate"><span class="pre">Data/samples/</span></code> and execute the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash download.sh <span class="p">&amp;</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This command will download five <cite>fastq.gz</cite> files. The character <cite>&amp;</cite> will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use <cite>ls -lht</cite> to check the progress in that <cite>Data/samples/</cite>.</p>
+<p>This command will download five <code class="docutils literal notranslate"><span class="pre">fastq.gz</span></code> files. The character <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use <cite>ls -lht</cite> to check the progress in that <code class="docutils literal notranslate"><span class="pre">Data/samples/</span></code>.</p>
 </div>
 <div class="section" id="exercise-0-1">
 <h4>Exercise 0.1<a class="headerlink" href="#exercise-0-1" title="Permalink to this headline">¶</a></h4>
