@@ -87,11 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Whippet: a fast and accurate tool for AS quantification</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#clone-repository">Clone repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#set-up-a-master-virtual-environment">Set up a master virtual environment</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Whippet: a fast and accurate tool for AS quantification</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="indexing_transcriptome.html">Differential inclusion analysis</a></li>
@@ -168,34 +164,10 @@
             
   <div class="section" id="whippet-a-fast-and-accurate-tool-for-as-quantification">
 <span id="whippet"></span><h1>Whippet: a fast and accurate tool for AS quantification<a class="headerlink" href="#whippet-a-fast-and-accurate-tool-for-as-quantification" title="Permalink to this headline">¶</a></h1>
-<p>To install MicroExonator follow these instructions:</p>
-<div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="_images/whippet_model.gif"><img alt="whippet model" src="_images/whippet_model.gif" style="width: 813.6px; height: 448.0px;" /></a>
+<p>Whippet is a fast, lightweight and accurate method for quantifying alternative splicing. Given an input gene annotation file on a <a class="reference external" href="https://www.ensembl.org/info/website/upload/gff.html">GTF format</a>, Whippet builds contiguous splice graphs (CSGs) to represent each transcript. Each CSG node represents a non-overlapping exonic sequence, while edges represent splice junctions or contiguous exonic regions. By mapping reads directly to the CSG, Whippet enables a fast annotation-oriented quantification of splicing events.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="_images/whippet_model.gif"><img alt="whippet model" src="_images/whippet_model.gif" style="width: 711.9px; height: 392.0px;" /></a>
 <p class="caption"><span class="caption-text">Figure 1: An overview of Whippet’s computational workflow to quantify alternative splicing events. A. ​Illustration of Whippet’s Node assignment given an example gene annotation with two isoforms. ​B. Representation of the CSG model that would be built given the example gene annotation provided above. ​C. Transcriptome indexing from CSGs generated for each annotated gene. ​D. Read alignment to the indexed transcriptome. E. Alternative splicing quantification through node PSI estimation, which takes into account the full set of RNA-seq reads aligned to edges that connect or exclude the corresponding splicing nodes. This figure was taken from <a class="reference external" href="https://github.com/timbitz/Whippet.jl">Whippet’s github repository</a>. For further information about the mode can be found at their publication <a class="reference external" href="https://doi.org/10.1016/j.molcel.2018.08.018">Sterne-Weiler et al. 2018</a>.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="clone-repository">
-<h2>Clone repository<a class="headerlink" href="#clone-repository" title="Permalink to this headline">¶</a></h2>
-<p>Clone the github repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/hemberg-lab/MicroExonator
-</pre></div>
-</div>
-<p>Install Miniconda 3</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod +x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
-</pre></div>
-</div>
-<p>Start using conda by opening a new terminal or just running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash
-</pre></div>
-</div>
-</div>
-<div class="section" id="set-up-a-master-virtual-environment">
-<h2>Set up a master virtual environment<a class="headerlink" href="#set-up-a-master-virtual-environment" title="Permalink to this headline">¶</a></h2>
-<p>Create a conda virtual enviroment with the necesary dependencies</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n snakemake_env -c bioconda -c conda-forge snakemake
-</pre></div>
-</div>
 </div>
 </div>
 
