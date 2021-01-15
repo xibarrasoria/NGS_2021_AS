@@ -1,8 +1,8 @@
-========
+==============================================
 Using RNA-seq to evaulate alternative splicing
-========
+==============================================
 
-Alternative splicing (AS) is a pivotal step for RNA processing in higher eukaryotes and it significantly expands the complexity of the transcriptome. In metazoans AS events are found for most genes, and they are regulated across developmental stages, tissues and cell-types. Many different methods have been proposed to study alternative splicing.  A wide range of computational methods have been proposed to assess AS using RNA-seq data, however many of these require extensive computational resources and often struggle to analyse complex AS events. During this project, you will be introduced to Whippet, `Whippet <https://github.com/timbitz/Whippet.jl>`_. (`Sterne-Weiler et al. 2018 <https://doi.org/10.1016/j.molcel.2018.08.018>`_), a light-weight tool developed in the programming language Julia to reliably analyse AS of any complexity using RNA-seq data.
+Alternative splicing (AS) is a pivotal step for RNA processing in higher eukaryotes and it significantly expands the complexity of the transcriptome. In metazoans AS events are found for most genes, and they are regulated across developmental stages, tissues and cell-types. A wide range of computational methods have been proposed to assess AS using RNA-seq data, however many of these require extensive computational resources and often struggle to analyse complex AS events. During this project, you will be introduced to Whippet, `Whippet <https://github.com/timbitz/Whippet.jl>`_. (`Sterne-Weiler et al. 2018 <https://doi.org/10.1016/j.molcel.2018.08.018>`_), a light-weight tool developed in the programming language Julia to reliably analyse AS of any complexity using RNA-seq data.
 
 
 The execution of this project will be separated the following different modules:
@@ -12,10 +12,12 @@ The execution of this project will be separated the following different modules:
     * Differential alternative splicing analyses
     * Advanced exercises 
 
+.. important:: To get the lasted version of these instructions make sure to delete your cookies and refresh. Do it once a day so you don't miss any updates! 
+
+
 **Support**
 
     For questions please keep in touch though the slack channel.
-
 
 
 .. toctree::
@@ -24,6 +26,14 @@ The execution of this project will be separated the following different modules:
     :hidden:
 
     setup
+
+.. toctree::
+    :name: Install
+    :maxdepth: 3
+    :hidden:
+
+    install_whippet
+
 
 .. toctree::
     :name: Indexing-transcriptome
