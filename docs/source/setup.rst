@@ -4,7 +4,7 @@
 Setup
 =====
 
-The life of the bioinformatician is not easy as some may thing. Big part of the time they are trying to install sofware and reproduce other researcher methods. In this section you will download all the software and necessary to data to conduct alternative splicing analysis using RNA-seq. To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this. 
+The life of the bioinformatician is not easy as some may think. A big part of the time they are trying to install software and reproduce other researcher methods. In this section, you will download all the software and necessary to data to conduct alternative splicing analysis using RNA-seq. To start with this project its necessary to acquire all the software and the data. The following steps will enable us to do this.
 
 
 Installing Conda
