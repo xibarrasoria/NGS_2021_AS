@@ -101,7 +101,7 @@ To access data from the ``NCBI archive``, we are going to use fastq-dump, which 
 
    bash download.sh &
 
-.. Note:: This command will download five ``fastq.gz`` files. The character ``&`` will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use `ls -lht` to check the progress in that ``Data/samples/``.     
+.. Note:: This command will download five ``fastq.gz`` files. The character ``&`` will enable us to keep running this command in the background. Depending on the internet connection this may take between 20-50 minutes. To use ``ls -l`` to check the progress in that ``Data/samples/``.     
 
 
 Exercise 1
