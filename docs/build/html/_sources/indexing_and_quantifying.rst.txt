@@ -11,8 +11,8 @@ The aim of the analysis of this project is to find differentially included splic
     3. Detection of differentially included nodes
 
 
-Building a transcriptome
-======================== 
+Building a transcriptome index
+============================== 
 
 Instead of the classical approach of mapping reads to the genome and then quantify gene expression, Whippet's quantification in performed considering the gene annotation coordinate and features. This are usually stored as a GTF file and Whippet's take these as input to generate transcript models. In order to generate such models, one needs to build an index based on the GTF and Genomic sequences (fasta). This can be achieved by running the following command:
 

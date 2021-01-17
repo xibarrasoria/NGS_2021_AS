@@ -33,7 +33,9 @@ Then from this interactive mode we can run
 
 .. note:: 
 
-   This command may take up to 30 mins to complete. In the meantime we recommend you to read Whippet's paper. Please let us know if you get caught beyond the `Paywall <https://en.wikipedia.org/wiki/Paywall>`_.
+
+   This command may take around 30 mins to install. In the mind time we recommend you to read Whippet's paper. Please let us know if you require access.
+
 
 Once the installation is finished, you can find the path where Whippet was installed by using the following command under Julia's interactive mode:
 
@@ -46,7 +48,13 @@ Find out how to exit Julia's interactive mode on its `documentation <https://doc
 
 In order to execute Whippet you will need to access its installation path. Inside this path you will find a folder called `bin` where all Whippet's scripts are ready to use! 
 
-.. important:: Make sure you save the path where Whippet is installed on a block note. It will be hard to remember otherwise.
+.. note:: Make sure you save the path where Whippet is installed on a block note. It will be hard to remember otherwise.
+
+.. important:: To make sure the ``.jl`` scripts have access to write run:
+
+   .. code-block:: bash
+      `sudo chmod +x` bin/whippet-*
+  
 
 
 

@@ -25,7 +25,7 @@ Moreover, if you list content inside the home directory, you will see a ``minico
 
 .. code-block:: bash
 
-    sudo chmod 755 -R /home/manager/miniconda3
+
     sudo chmod 755 -R /home/manager
 
 .. note::

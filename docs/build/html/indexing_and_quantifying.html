@@ -91,7 +91,7 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Transcriptome guided quantification of isoforms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#building-a-transcriptome">Building a transcriptome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-a-transcriptome-index">Building a transcriptome index</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quantifying-splicing-nodes-and-transcripts">Quantifying splicing nodes and transcripts</a></li>
 </ul>
 </li>
@@ -101,9 +101,6 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="advanced_exercises.html">Advanced exercises</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="licence.html">MIT License (MIT)</a></li>
 </ul>
 
             
@@ -179,8 +176,8 @@
 <li><p>Detection of differentially included nodes</p></li>
 </ol>
 </div></blockquote>
-<div class="section" id="building-a-transcriptome">
-<h2>Building a transcriptome<a class="headerlink" href="#building-a-transcriptome" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="building-a-transcriptome-index">
+<h2>Building a transcriptome index<a class="headerlink" href="#building-a-transcriptome-index" title="Permalink to this headline">¶</a></h2>
 <p>Instead of the classical approach of mapping reads to the genome and then quantify gene expression, Whippet’s quantification in performed considering the gene annotation coordinate and features. This are usually stored as a GTF file and Whippet’s take these as input to generate transcript models. In order to generate such models, one needs to build an index based on the GTF and Genomic sequences (fasta). This can be achieved by running the following command:</p>
 <div class="admonition-challenge-1 admonition">
 <p class="admonition-title">Challenge 1</p>
